@@ -8,11 +8,11 @@
 	var functions_success = {
 	
 			TOAJAX_demo_1: function (response) { //name according to following : TOAJAX_[id of the form]
-					   $("#response").attr({ 'src' : response.image }); //whatever u wanna do
+						 //whatever u wanna do
 			},
 			
 			TOAJAX_demo_2: function (response) { 
-					   $("#response").attr({ 'src' : '' }); //whatever u wanna do
+						//whatever u wanna do
 			}
 	
 	}
@@ -25,7 +25,7 @@
 			},
 			
 			TOAJAX_demo_2: function (response) {
-					   //whatever u wanna do
+						//whatever u wanna do
 			}
 	
 	}
