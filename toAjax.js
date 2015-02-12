@@ -90,16 +90,16 @@
 		var $that = $(this); //form as jQuery object
 		
 		var id = $that.attr("id"); //form ID
-		action = $that.attr("action"); //form action (url)
-		method = $that.attr("method"); //form method (POST...)
-		form_submit = $that.find("input[type*=submit]"); //submit button
+		var action = $that.attr("action"); //form action (url)
+		var method = $that.attr("method"); //form method (POST...)
+		var form_submit = $that.find("input[type*=submit]"); //submit button
 		
-		datatype = $that.attr("datatype"); //form datatype can be set in the form itself
+		var datatype = $that.attr("datatype"); //form datatype can be set in the form itself
 		
 		o.method = method == null ? o.method : method ; //if method is not set in the form, then set on default options
 		o.data_type = datatype == null ? o.data_type : datatype ; //if datatype is not set in the form, then set on default options
 		
-		data = {}; //create an object to store the form data that will then be passed by AJAX
+		var data = {}; //create an object to store the form data that will then be passed by AJAX
 		
 			form_submit.click(function(event){ //triggers when the form submit button is clicked
 				
